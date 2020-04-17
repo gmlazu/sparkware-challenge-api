@@ -1,0 +1,24 @@
+{
+  "name": "sparkware_challenge",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "start:prod": "node server.js",
+    "start:dev": "yarn run build && node build/server.js",
+    "build": "yarn run lint && rm -rf ./build && node_modules/.bin/tsc",
+    "lint": "node_modules/tslint/bin/tslint --project tsconfig.json -q"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "~4.16.0",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/compression": "0.0.36",
+    "@types/cors": "^2.8.6",
+    "ts-node": "^8.6.2",
+    "tslint": "^5.18.0"
+  }
+}

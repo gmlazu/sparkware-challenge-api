@@ -1,0 +1,12 @@
+# System files
+.DS_Store
+
+# Node packages
+node_modules/**
+yarn-error.log
+
+# Idea files
+.idea/**
+
+# Build files
+build/**
